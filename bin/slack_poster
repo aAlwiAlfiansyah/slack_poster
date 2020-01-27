@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require 'slack_poster'
+
+CHANNEL = ARGV[0]
+MESSAGE = ARGV[1]
+TOKEN = ARGV[2]
+
+slack_poster = SlackPoster.new(NetworkRequest.new)
+slack_poster.post_message(CHANNEL, MESSAGE, TOKEN)
