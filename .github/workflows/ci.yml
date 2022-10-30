@@ -2,7 +2,7 @@ name: Slack Poster
 
 on:
   push:
-    branches: [ main, add-test-actions ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
