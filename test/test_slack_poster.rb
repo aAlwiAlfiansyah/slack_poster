@@ -1,9 +1,7 @@
-#!/usr/bin/env ruby
-
 # frozen_string_literal: true
 
-require_relative 'test_helper.rb'
-require_relative '../lib/slack_poster.rb'
+require_relative 'test_helper'
+require_relative '../lib/slack_poster'
 
 class SlackPosterTest < Test::Unit::TestCase
   def test_post_message

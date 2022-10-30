@@ -2,7 +2,7 @@
 
 # frozen_string_literal: true
 
-require_relative 'slack_poster/network_request.rb'
+require_relative 'slack_poster/network_request'
 
 # Send message and upload file to slack
 class SlackPoster
@@ -19,9 +19,10 @@ class SlackPoster
   end
 
   def escape_newline(message)
-    new_message = message.gsub('%0A', "\n")
+    # new_message = message.gsub('%0A', "\n")
     # new_message = new_message.gsub('0x0A', "\n")
     # new_message = new_message.gsub('\n', "\n")
-    new_message
+    # new_message
+    message.gsub('%0A', "\n")
   end
 end
