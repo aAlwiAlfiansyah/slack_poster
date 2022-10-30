@@ -1,0 +1,18 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: disable
+  Include:
+    - '**/Rakefile'
+    - '**/*.rb'
+  Exclude:
+    - '**/Gemfile'
+    - 'build/**/*.rb'
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 20
+  Exclude: 
+    - scripts/tests/**/*_test.rb

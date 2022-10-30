@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'test_helper.rb'
-require_relative '../lib/slack_poster/network_request.rb'
+require_relative 'test_helper'
+require_relative '../lib/slack_poster/network_request'
 require 'webmock/test_unit'
 
 # test_network_request.rb
