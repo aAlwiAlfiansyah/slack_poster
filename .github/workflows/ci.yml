@@ -67,5 +67,5 @@ jobs:
       - name: Archive slack_poster gem
         uses: actions/upload-artifact@v3
         with:
-          name: slack_poster gem
+          name: slack_poster_gem
           path: slack_poster-*.gem
